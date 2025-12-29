@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>btvn4</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="birthdate"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td> 
+                <td><input type="radio" name="gender" value="male"> Nam
+                    <input type="radio" name="gender" value="female"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Số căn cước công dân:</td>
+                <td><input type="tel" name="id-number"></td>
+            </tr>
+            <tr>
+                <td>Ngày cấp: </td>
+                <td><input type="number" name="issue-date"></td>
+            </tr>
+            <tr>
+                <td>Nơi cấp: </td>
+                <td><input type="text" name="place-of-issue"></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ thường trú: </td>
+                <td><textarea name="permanent-address" rows="2" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ tạm trú: </td>
+                <td><textarea name="temporary-address" rows="2" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Loại căn cước công dân:</td>
+                <td><input type="radio" name="id-type" value="new"> Căn cước công dân mới
+                    <input type="radio" name="id-type" value="old"> Căn cước công dân cũ
+                </td>
+            </tr>
+            <tr>
+                <td>Dân tộc:</td>
+                <td><input type="text" name="ethnicity"></td>
+            </tr>
+            <tr>
+                <td>Tôn giáo:</td>
+                <td><input type="text" name="religion"></td>
+            </tr>
+            <tr>
+                <td>Quốc tịch:</td>
+                <td><input type="text" name="nationality" value="Việt Nam"></td>
+            </tr>
+            <tr>
+                <td>Họ tên cha/mẹ:</td>
+                <td><input type="text" name="parent-name"></td>
+            </tr>
+            <tr>
+                <td>Số CMND/CCCD của cha/mẹ:</td>
+                <td><input type="tel" name="parent-id-number"></td>
+            </tr>
+            <tr>
+                <td>Tỉnh/Thành phố:</td>
+                <td><select name="province">
+                    <option value="choose">Chọn tỉnh/thành phố</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hochiminh">Hồ Chí Minh</option>
+                </select>
+                </td>
+        </table>
+    </form>
+    <button type="submit">Gửi thông tin</button>
+</body>
+</html>

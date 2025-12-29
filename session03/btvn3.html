@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>btvn3</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="birthdate"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td> 
+                <td><input type="radio" name="gender" value="male"> Nam
+                    <input type="radio" name="gender" value="female"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chuyên ngành: </td>
+                <td><input type="text" name="major"></td>
+            </tr>
+            <tr>
+                <td>Năm nhập học: </td>
+                <td><input type="number" name="admission_year"></td>
+            </tr>
+            <tr>
+                <td>Điểm GPA: </td>
+                <td><input type="number" name="gpa-points"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ: </td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Lớp học: </td>
+                <td><select name="class">
+                    <option value="class-1">Lớp 1</option>
+                    <option value="class-2">Lớp 2</option>
+                    <option value="class-3">Lớp 3</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Ngày đăng ký học:</td>
+                <td><input type="datetime-local" name="registration_date"></td>
+            </tr>
+        </table>
+    </form>
+    <button type="submit">Gửi thông tin</button>
+</body>
+</html>

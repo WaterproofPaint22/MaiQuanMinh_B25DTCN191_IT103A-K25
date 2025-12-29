@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>btvn5</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="birthdate"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td> 
+                <td><input type="radio" name="gender" value="male"> Nam
+                    <input type="radio" name="gender" value="female"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ: </td>
+                <td><textarea name="address" rows="2" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Vai trò trong nhóm:</td>
+                <td><select name="role">
+                    <option value="member">Thành viên</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td><input type="text" name="hobbies"></td>
+            </tr>
+            <tr>
+                <td>Kỹ năng:</td>
+                <td><textarea name="skills" rows="2" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Thời gian rảnh:</td>
+                <td><input type="checkbox" name="availability" value="morning"> Sáng
+                    <input type="checkbox" name="availability" value="afternoon"> Chiều
+                    <input type="checkbox" name="availability" value="evening"> Tối
+                </td>
+            </tr>
+            <tr>
+                <td>Lý do tham gia nhóm:</td>
+                <td><textarea name="reason" rows="2" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Màu yêu thích:</td>
+                <td><input type="color" name="favorite_color"></td>
+            </tr>
+            <tr>
+                <td>Đăng ký nhận bản tin:</td>
+                <td><input type="checkbox" name="newsletter" value="yes">Có
+                </td>
+            </tr>
+                <td>Nhận thông báo qua email:</td>
+                <td><input type="radio" name="notification_method" value="email">Email
+                    <input type="radio" name="notification_method" value="sms">SMS
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Đăng ký thành viên</button>
+    </form>
+</body>
+</html>

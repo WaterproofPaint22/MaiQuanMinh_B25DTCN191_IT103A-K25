@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>btvn2</title>
+</head>
+<body>
+    <h2>Form Đặt Mua Tài Liệu Lập Trình</h2>
+    <form action="/dat-mua" method="POST">
+        <p>
+            Chọn tài liệu: <select name="service">
+                <option value="tai-lieu-mon-html-css">Tài liệu môn HTML&amp;CSS</option>
+                <option value="tai-lieu-mon-javascript">Tài liệu môn JavaScript</option>
+            </select>
+        </p>
+        <p>
+            Số lượng: <input type="number" name="quantity" value="1" min="1">
+        </p>
+        
+        <p>
+            Ghi chú: <textarea name="note" rows="4" cols="20"></textarea>
+        </p>
+        <p>
+            Địa chỉ giao hàng: <textarea name="delivery_address" rows="4" cols="20"></textarea>
+        </p>
+        <button type="submit">Đặt mua</button>
+    </form>
+</body>
+</html>
