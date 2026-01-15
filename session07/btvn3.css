@@ -1,0 +1,21 @@
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+}
+h1 {
+    color: rgb(255, 133, 2);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: black;
+}
+h3{
+    color: rgb(0, 255, 76);
+}
+p {
+    color: rgb(92, 92, 92);
+}
