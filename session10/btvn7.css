@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.hero-banner {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/image (3).png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.gallery-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: white;
+    text-align: center;
+}
+
+.overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.booking-section {
+    background-color: #990000;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.booking-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.booking-desc {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input, 
+.booking-form select {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px 40px;
+    background-color: white;
+    color: #990000;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+    color: #cc0000;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group {
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
